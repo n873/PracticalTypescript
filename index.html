@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>TechExample</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="app.js"></script>
+    <script src="app/Login.js"></script>
+    <script src="app/common/Validation.js"></script>
+    <script src="app/common/ApiHelper.js"></script>
+    <script src="app/enums/Permission.js"></script>
+    <script src="app/models/LoginResult.js"></script>
+    <script src="app/models/Page.js"></script>
+    <script src="app/models/Permission.js"></script>
+    <script src="app/models/User.js"></script>
+    <script src="app/models/ValidationResult.js"></script>
+    <script src="app/services/LoginServiceHelper.js"></script>
+</head>
+<body>
+    <h1>TechExample</h1>
+    <form>
+        <input type="email" required name="inputEmail" id="inputEmail" />
+        <label for="inputEmail">Email</label>
+        <input type="password" required name="inputPassword" id="inputPassword" />
+        <label for="inputPassword">Password</label>
+        <button type="button" id="btnSubmit" onclick="LoginClick()" >Login</button>
+    </form>
+    <div id="divError">
+        <h3>Oops!</h3>
+        <label id="lblErrorMessage"></label>
+    </div>
+</body>
+</html>
